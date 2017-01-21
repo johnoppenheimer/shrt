@@ -1,0 +1,17 @@
+// Placez vos paramètres dans ce fichier pour remplacer les paramètres par défaut et les paramètres utilisateur.
+{
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.wrappingColumn": -1,
+    "editor.rulers": [100],
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "data/": true,
+        "dist/": true,
+        "node_modules/": true,
+        "paws/": true
+    }
+}

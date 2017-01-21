@@ -1,0 +1,22 @@
+mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    volumes:
+     - ./data/mongodb:/data/db
+
+shrt-dev:
+    image: node:latest
+    container_name: shrt-dev
+    command: /bin/bash -c "./node_modules/.bin/nodemon --delay 1 --watch dist --debug=0.0.0.0:5858 ./dist/server.js"
+    working_dir: /app
+    links: 
+        - mongodb
+    ports: 
+        - 3636:3636
+        - 5858:5858
+    volumes:
+        - .:/app
+    environment:
+        - NODE_ENV=development
+        - API_URL=http://localhost
+        - API_PORT=8080
