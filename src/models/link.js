@@ -17,7 +17,7 @@ export const LinkSchema = new mongoose.Schema({
         es_indexed: true,
         match: [/(http|ftp|https):\/\/[\w\-_]+(\.[\w\-_]+)+([\w\-\.,@?^=%&amp;:/~\+#]*[\w\-\@?^=%&amp;/~\+#])?/, "The value of path {PATH} ({VALUE}) is not a valid URL."]
     },
-    request: {
+    requests: {
         type: Number,
         default: 0
     }
