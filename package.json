@@ -1,0 +1,46 @@
+{
+  "name": "shrt",
+  "version": "0.1.0",
+  "description": "URL Shortener",
+  "main": "server.js",
+  "repository": {
+    "url": "https://johnoppenheimer@github.com/johnoppenheimer/shrt.git",
+    "type": "git"
+  },
+  "scripts": {
+    "build": "yarn install && gulp build",
+    "clean": "yean clean && gulp clean",
+    "lint": "gulp lint",
+    "start": "docker-compose up shrt-dev",
+    "test": "docker-compose run --rm shrt-test-dev"
+  },
+  "author": "Maxime Cattet <maximecattet@gmx.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "compression": "^1.6.2",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "express-validation": "^1.0.1",
+    "helmet": "^3.4.0",
+    "http-status": "^0.2.5",
+    "i18n": "^0.8.3",
+    "joi": "^9.0.4",
+    "method-override": "^2.3.7",
+    "mongoosastic": "^4.2.4",
+    "mongoose": "^4.7.7",
+    "morgan": "^1.7.0"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.22.2",
+    "babel-preset-env": "^1.1.8",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-eslint": "^3.0.1",
+    "gulp-sourcemaps": "^2.4.0",
+    "nodemon": "^1.11.0",
+    "pump": "^1.0.2"
+  }
+}

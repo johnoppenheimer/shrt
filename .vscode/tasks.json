@@ -1,0 +1,48 @@
+{
+    "version": "0.1.0",
+    "command": "yarn",
+    "isShellCommand": true,
+    "showOutput": "always",
+    "suppressTaskName": true,
+    "tasks": [
+        {
+            "taskName": "install",
+            "args": [
+                "install"
+            ],
+            "isWatching": false
+        },
+        {
+            "taskName": "upgrade",
+            "args": [
+                "upgrade"
+            ],
+            "isWatching": false
+        },
+        {
+            "taskName": "clean",
+            "args": [
+                "run",
+                "clean"
+            ],
+            "isWatching": false
+        },
+        {
+            "taskName": "build",
+            "args": [
+                "run",
+                "build"
+            ],
+            "isBuildCommand": true,
+            "isWatching": false
+        },
+        {
+            "taskName": "test",
+            "args": [
+                "test"
+            ],
+            "isTestCommand": true,
+            "isWatching": false
+        }
+    ]
+}
