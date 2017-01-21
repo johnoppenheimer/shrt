@@ -1,4 +1,6 @@
 {
 	"Shrt API": "Shrt API",
-	"Healthy": "Healthy"
+	"Healthy": "Healthy",
+	"%s %s not found": "%s %s not found",
+	"Unhandled server error": "Unhandled server error"
 }
