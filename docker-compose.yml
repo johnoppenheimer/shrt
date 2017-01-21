@@ -17,6 +17,7 @@ shrt-dev:
     working_dir: /app
     links: 
         - mongodb
+        - elasticsearch
     ports: 
         - 8080:8080
         - 5858:5858
