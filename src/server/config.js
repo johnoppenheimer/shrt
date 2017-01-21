@@ -2,6 +2,7 @@ let params = {
     NODE_ENV: process.env.NODE_ENV,
     API_URL: process.env.API_URL,
     API_PORT: process.env.API_PORT,
+    ELASTIC_URL: process.env.ELASTIC_URL,
     MONGO_URL: process.env.MONGO_URL
 };
 
