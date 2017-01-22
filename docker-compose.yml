@@ -3,7 +3,7 @@ elasticsearch:
     container_name: elasticsearch
     volumes:
         - ./data/elasticsearch:/usr/share/elasticsearch/data
-        
+
 mongodb:
     image: mongo:latest
     container_name: mongodb
@@ -15,10 +15,10 @@ shrt-dev:
     container_name: shrt-dev
     command: /bin/bash -c "./node_modules/.bin/nodemon --delay 1 --watch dist --debug=0.0.0.0:5858 ./dist/server.js"
     working_dir: /app
-    links: 
+    links:
         - mongodb
         - elasticsearch
-    ports: 
+    ports:
         - 8080:8080
         - 5858:5858
     volumes:
