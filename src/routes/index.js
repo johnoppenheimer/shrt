@@ -14,6 +14,9 @@ router.get("/", (req, res) => {
     });
 });
 
+router.use("/health-check", healthRoutes);
+router.use("/links", linkRoutes);
+
 router.get("/:linkId", (req, res, next) => {
     Link.get(req.params.linkId)
         .then(link => {
@@ -26,8 +29,5 @@ router.get("/:linkId", (req, res, next) => {
         })
         .catch(e => next(e));
 });
-
-router.use("/health-check", healthRoutes);
-router.use("/links", linkRoutes);
 
 export default router;
